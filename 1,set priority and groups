@@ -1,0 +1,23 @@
+1.Write a program to set priority and groups ("NonFunctional","Functional","Adhoc","UI Test") and it should run in alphabetical order
+
+import org.testng.annotations.Test;
+
+public class Assinment1 {
+	
+	@Test (priority = 1,groups="NonFunctional")
+	public void NonFunctional() {
+		System.out.println("NonFunctional");
+	}
+	@Test (priority = 1,groups="Functional")
+	public void Functional() {
+		System.out.println("Functional");
+	}
+	@Test (priority = 1,groups="Adhoc")
+	public void Adhoc() {
+		System.out.println("Adhoc");
+	}
+	@Test (priority = 1,groups="UITest")
+	public void UITest() {
+		System.out.println("UITest");
+	}
+}
